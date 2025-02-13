@@ -95,7 +95,7 @@ def main():
     with col1:
         caption = f"{selected_option} Checkerboard"
         caption += " (Warped)" if warp_amplitude > 0 else ""
-        st.image(warped_checkerboard, caption=caption, channels="BGR", use_column_width=True)
+        st.image(warped_checkerboard, caption=caption, channels="BGR", use_container_width=True)
 
     with col2:
         st.pyplot(plot_histogram(warped_checkerboard))
